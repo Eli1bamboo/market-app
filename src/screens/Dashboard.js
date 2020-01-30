@@ -1,30 +1,30 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { firestoreConnect } from 'react-redux-firebase'
-import { compose } from 'redux'
+import React from 'react';
+import { compose } from 'redux';
+import { connect } from 'react-redux';
+import { firestoreConnect } from 'react-redux-firebase';
 
-function Dashboard(props) {
-    const { data } = props
-    const greeting = 'Hello Function Component!';
+const Dashboard = (props) => {
+	const { data } = props;
+	const greeting = 'Hello Function Component!';
 
-    console.log(data);
+	console.log(data);
 
-    return <p>{greeting}</p>;
-}
+	return <p>{greeting}</p>;
+};
 
 const mapStateToProps = (state) => {
-    const data = state.firestore.data
+	const data = state.firestore.data;
 
-    return {
-        data
-    }
-}
+	return {
+		data
+	};
+};
 
 export default compose(
-    connect(mapStateToProps),
-    firestoreConnect([
-        {
-            collection: 'test'
-        }
-    ])
-)(Dashboard)
+	connect(mapStateToProps),
+	firestoreConnect([
+		{
+			collection: 'test'
+		}
+	])
+)(Dashboard);
