@@ -1,0 +1,71 @@
+/* Image Gallery Import (Carousel) */
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar default style reset  */
+.MuiToolbar-gutters {
+padding: 0!important
+}
+
+/* Navbar */
+
+.nav-logo {
+  height: 60px;
+  margin: 10px;
+  padding: 0
+}
+
+.nav-links {
+  text-decoration: none;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 50px;
+  
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #f3f3f3;
+  text-shadow: 2px 2px 5px black;
+  transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+  font-size: 1.7em;
+  transition: 0.2s ease;
+}
+
+/* Hamburger Menu Icon */
+
+.MuiSvgIcon-root {
+  color: black;
+  width: 3rem !important;
+  height: 3rem !important;
+  padding-right: 0;
+}
+
+/* ***************** */
+
+/* Drawer */
+/* Drawer Icons  */
+
+.MuiListItem-root .MuiSvgIcon-root {
+  color: #000;
+}
+
+/* ***************** */
+
+/* Carousel */
+
+.slider-container {
+  width: 100vw;
+  min-height: 50%
+}
+/* ***************** */

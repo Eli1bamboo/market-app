@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css";
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { Provider, useSelector } from 'react-redux';
 import { store } from './config/storeConfig';
