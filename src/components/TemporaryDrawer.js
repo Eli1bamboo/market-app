@@ -25,7 +25,20 @@ const useStyles = makeStyles({
   },
   listItemText: {
     fontSize: "1.1em"
-  }
+  },
+  largeIcon: {
+    width: 60,
+    height: 60,
+  },
+  mediumIcon: {
+    width: 40,
+    height: 40
+  },
+
+  smallIcon: {
+    width: 25,
+    height: 25,
+  },
 });
 
 export default function TemporaryDrawer() {
@@ -59,8 +72,8 @@ export default function TemporaryDrawer() {
         <img className="nav-logo" src={logo} alt="Mercadito Logo" srcset="" />
 
         <ListItem button>
-          <ListItemIcon >
-            <FavoriteIcon color="action" />
+          <ListItemIcon classes={classes.largeIcon}>
+            <FavoriteIcon  />
           </ListItemIcon>
           <ListItemText
             primary="Nosotros"

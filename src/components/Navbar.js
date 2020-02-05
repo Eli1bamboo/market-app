@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import TemporaryDrawer from "./TemporaryDrawer";
 import logo from '../assets/img/test-logo.png';
+import logoo from '../assets/img/mercadito-text.png'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -43,13 +44,13 @@ export default function ButtonAppBar() {
         }}
       >
         <Toolbar style={{ justifyContent: "space-between" }}>
-        <img className='nav-logo' src={logo} alt="Mercadito Logo" srcset=""/>
+        <img className='nav-logo' src={logoo} alt="Mercadito Logo" srcset=""/>
           <IconButton
             edge="start"
             className={"classes.menuButton burger"}
             color="default"
             aria-label="menu"
-            style={{ paddingRight: 0 }}
+            size="large"
           >
             <TemporaryDrawer />
           </IconButton>
