@@ -8,6 +8,7 @@ import { rrfProps } from './config/rrfConfig';
 import Login from './screens/Login';
 import Home from './screens/Home';
 import Dashboard from './screens/Dashboard';
+import Productos from './screens/Productos';
 import PrivateRoute from './routes/PrivateRoute';
 
 const AuthIsLoaded = ({ children }) => {
@@ -28,6 +29,7 @@ const App = () => {
 						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route path="/login" component={Login} />
+							<Route path="/productos" component={Productos} />
 							<PrivateRoute path="/protected" component={Dashboard} />
 							<Redirect to="/" />
 						</Switch>

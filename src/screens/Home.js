@@ -6,10 +6,10 @@ import { firestoreConnect } from "react-redux-firebase";
 import Navbar from "../components/Navbar";
 import Carousel from "../components/Carousel";
 import Card from "../components/Card";
+import Productos from "./Productos";
 
 const Home = props => {
   const { data } = props;
-  const greeting = "Hello Home!";
 
   console.log(data);
 

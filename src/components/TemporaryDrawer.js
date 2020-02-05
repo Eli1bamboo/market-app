@@ -6,6 +6,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import HotelIcon from "@material-ui/icons/Hotel";
@@ -58,8 +59,8 @@ export default function TemporaryDrawer() {
         <img className="nav-logo" src={logo} alt="Mercadito Logo" srcset="" />
 
         <ListItem button>
-          <ListItemIcon>
-            <FavoriteIcon />
+          <ListItemIcon >
+            <FavoriteIcon color="action" />
           </ListItemIcon>
           <ListItemText
             primary="Nosotros"
@@ -69,7 +70,7 @@ export default function TemporaryDrawer() {
 
         <ListItem button>
           <ListItemIcon>
-            <HotelIcon />
+            <HotelIcon color="primary" />
           </ListItemIcon>
           <ListItemText
             primary="Productos"
